@@ -35,8 +35,8 @@ def transmitir(pin):
     pulsos.init(period=150, mode=Timer.PERIODIC, callback=heartbeat)
 
 pulsos = Timer(1)
-temperatura_superior=25;
-temperatura_inferior=25;
+temperatura_superior=25; # Setear valor deseado maximo
+temperatura_inferior=25; # Setear valor deseado minimo
 publicado = False  # Variable de estado para rastrear si se ha realizado la publicación
 
 while True:
